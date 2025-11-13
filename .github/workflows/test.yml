@@ -10,3 +10,23 @@ on:
   permissions:
     id-token: write
     contents: read  
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up python 3.9
+      uses: actions/setup-python@v3
+      with:
+        python-version: 3.9
+        
+
+    - name: List Files
+      run: 
+        echo "Tenny is teaching"
+
+   
