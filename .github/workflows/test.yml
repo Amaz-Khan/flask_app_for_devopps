@@ -51,8 +51,8 @@ jobs:
  
       - name: Build and Push Image
         run: |
-          docker build -t ${{ secrets.Amaz_USERNAME }}/my-python-app-Amaz:${{ github.sha }} .
-          docker push ${{ secrets.Amaz_USERNAME }}/my-python-app-Amaz:${{ github.sha }}
+          docker build -t ${{ secrets.Amaz_USERNAME }}/flaskwebapp-main:${{ github.sha }} .
+          docker push ${{ secrets.Amaz_USERNAME }}/flaskwebapp-main:${{ github.sha }}
  
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
