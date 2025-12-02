@@ -35,13 +35,9 @@ def about():
     )
 
 @app.route('/zain')
-def about():
-    return render_template(
-        'about.html',
-        title='About',
-        year=datetime.now().year,
-        message='Your application description page. zain is here'
-    )
+def zain():
+    return 'Zain Page'
+    
 
 @app.route('/db-test')
 def db_test():
