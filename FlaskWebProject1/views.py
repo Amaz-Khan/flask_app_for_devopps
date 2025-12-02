@@ -34,6 +34,11 @@ def about():
         message='Your application description page.'
     )
 
+@app.route('/zain')
+def zain():
+    return 'Zain Page'
+    
+
 @app.route('/db-test')
 def db_test():
     try:
